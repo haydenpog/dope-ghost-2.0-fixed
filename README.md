@@ -1,14 +1,14 @@
-To fix the source:
-Make sure you have java edition 17.0.1 you can find it on google. \n
-Open project in visual studio 2022
-Set the build options to Release(DLL) and x64
-Go to project tab at top
-go to dope internal properties
-go to "VC++ Directories"
-than go to include directories
-Click on the first one and direct it to the /dope internal/ root folder.
-Than click okay and apply
-Now go to the build button at the top and click "Build Dope Internal"
+To fix the source:<br>
+Make sure you have java edition 17.0.1 you can find it on google. <br>
+Open project in visual studio 2022<br>
+Set the build options to Release(DLL) and x64<br>
+Go to project tab at top<br>
+go to dope internal properties<br>
+go to "VC++ Directories"<br>
+than go to include directories<br>
+Click on the first one and direct it to the /dope internal/ root folder.<br>
+Than click okay and apply<br>
+Now go to the build button at the top and click "Build Dope Internal"<br>
 
 Set the build options to Release(XP) and x64
 Now click the dope loader project on the far right side.
