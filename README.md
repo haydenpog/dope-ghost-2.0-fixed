@@ -1,5 +1,5 @@
 To fix the source:
-Make sure you have java edition 17.0.1 you can find it on google.
+Make sure you have java edition 17.0.1 you can find it on google. \n
 Open project in visual studio 2022
 Set the build options to Release(DLL) and x64
 Go to project tab at top
