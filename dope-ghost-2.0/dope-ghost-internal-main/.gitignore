@@ -1,0 +1,18 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/dope internal
+/dope internal/x64/Debug
+/x64/Debug
+/dope internal/x64/Release
+/x64/Release
+/dope loader/x64/Debug
+/dope build getter/x64
+*.filters
+/dope loader/x64/Release
+/dope internal/Debug
+/BlackBone
+/.vs
+/libs
+/includes/curl

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ce064b0d-08a7-4e94-8263-b279102c820a}</ProjectGuid>
+    <RootNamespace>dopeinternal</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Maxime\source\repos\dope internal\dope internal;C:\Program Files\Java\jdk-17.0.1\include;C:\Program Files\Java\jdk-17.0.1\include\win32;C:\Users\Maxime\source\repos\dope internal\dope internal;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk-17.0.1\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\thedi\Downloads\dope-ghost-2.0-main\dope-ghost-2.0-main\dope-ghost-2.0\dope-ghost-internal-main\dope internal;C:\Program Files\Java\jdk-17.0.1\include;C:\Program Files\Java\jdk-17.0.1\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Java\jdk-17.0.1\lib;C:\Program Files\Java\jdk-17.0.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files\Java\jdk-17.0.1\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+    <IncludePath>C:\Program Files\Java\jdk-17.0.1\include\win32;C:\Program Files\Java\jdk-17.0.1\include;C:\Users\Maxime\source\repos\dope internal\dope internal;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DOPEINTERNAL_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>jvm.lib;Ws2_32.lib;opengl32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DOPEINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DOPEINTERNAL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>jvm.lib;Ws2_32.lib;opengl32.lib;Winmm.lib</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;DLLZZ_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>jvm.lib;Ws2_32.lib;opengl32.lib;Winmm.lib</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="src\Cheat\Hack.h" />
+    <ClInclude Include="src\Cheat\Hooks\wglSwapBuffers.h" />
+    <ClInclude Include="src\Cheat\Hooks\WSA.h" />
+    <ClInclude Include="src\Cheat\Modules\Combat\AimAssist.h" />
+    <ClInclude Include="src\Cheat\Modules\Combat\LeftClicker.h" />
+    <ClInclude Include="src\Cheat\Modules\Combat\Reach.h" />
+    <ClInclude Include="src\Cheat\Modules\Combat\RightClicker.h" />
+    <ClInclude Include="src\Cheat\Modules\Combat\Velocity.h" />
+    <ClInclude Include="src\Cheat\Modules\Misc\Blink.h" />
+    <ClInclude Include="src\Cheat\Modules\Misc\BridgeAssist.h" />
+    <ClInclude Include="src\Cheat\Modules\Misc\ThrowPearl.h" />
+    <ClInclude Include="src\Cheat\Modules\Misc\ThrowPots.h" />
+    <ClInclude Include="src\Cheat\Modules\Module.h" />
+    <ClInclude Include="src\Cheat\Modules\Movement\Bhop.h" />
+    <ClInclude Include="src\Cheat\Modules\Movement\TimerSpeed.h" />
+    <ClInclude Include="src\Cheat\Modules\Settings.h" />
+    <ClInclude Include="src\Cheat\Modules\Visuals\ArrayList.h" />
+    <ClInclude Include="src\Cheat\Modules\Visuals\BlockESP.h" />
+    <ClInclude Include="src\Cheat\Modules\Visuals\ESP.h" />
+    <ClInclude Include="src\Game\Classes\ActiveRenderInfo.h" />
+    <ClInclude Include="src\Game\Classes\AxisAlignedBB.h" />
+    <ClInclude Include="src\Game\Classes\Block.h" />
+    <ClInclude Include="src\Game\Classes\BlockPos.h" />
+    <ClInclude Include="src\Game\Classes\FontRenderer.h" />
+    <ClInclude Include="src\Game\Classes\GameSettings.h" />
+    <ClInclude Include="src\Game\Classes\Gui.h" />
+    <ClInclude Include="src\Game\Classes\GuiScreen.h" />
+    <ClInclude Include="src\Game\Classes\InventoryPlayer.h" />
+    <ClInclude Include="src\Game\Classes\ItemStack.h" />
+    <ClInclude Include="src\Game\Classes\KeyBinding.h" />
+    <ClInclude Include="src\Game\Classes\MovingObjectPosition.h" />
+    <ClInclude Include="src\Game\Classes\Player.h" />
+    <ClInclude Include="src\Game\Classes\Minecraft.h" />
+    <ClInclude Include="src\Game\Classes\RenderManager.h" />
+    <ClInclude Include="src\Game\Classes\Timer.h" />
+    <ClInclude Include="src\Game\Classes\World.h" />
+    <ClInclude Include="src\Game\Field.h" />
+    <ClInclude Include="src\Game\Klass.h" />
+    <ClInclude Include="src\Game\Mapper.h" />
+    <ClInclude Include="src\Game\Method.h" />
+    <ClInclude Include="src\Helper\Communication.h" />
+    <ClInclude Include="src\Helper\HookFunction.h" />
+    <ClInclude Include="src\Helper\Memory.h" />
+    <ClInclude Include="src\Helper\Utils.h" />
+    <ClInclude Include="src\Helper\Vec2.h" />
+    <ClInclude Include="src\Helper\Vec3.h" />
+    <ClInclude Include="src\Helper\Vec4.h" />
+    <ClInclude Include="vendors\imgui\fa.hpp" />
+    <ClInclude Include="vendors\imgui\font.hpp" />
+    <ClInclude Include="vendors\imgui\imconfig.h" />
+    <ClInclude Include="vendors\imgui\imgui.h" />
+    <ClInclude Include="vendors\imgui\imgui_impl_opengl2.hpp" />
+    <ClInclude Include="vendors\imgui\imgui_internal.h" />
+    <ClInclude Include="vendors\imgui\imstb_rectpack.h" />
+    <ClInclude Include="vendors\imgui\imstb_textedit.h" />
+    <ClInclude Include="vendors\imgui\imstb_truetype.h" />
+    <ClInclude Include="vendors\minhook\buffer.h" />
+    <ClInclude Include="vendors\minhook\hde\hde32.h" />
+    <ClInclude Include="vendors\minhook\hde\hde64.h" />
+    <ClInclude Include="vendors\minhook\hde\pstdint.h" />
+    <ClInclude Include="vendors\minhook\hde\table32.h" />
+    <ClInclude Include="vendors\minhook\hde\table64.h" />
+    <ClInclude Include="vendors\minhook\MinHook.h" />
+    <ClInclude Include="vendors\minhook\trampoline.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="src\Cheat\Hack.cpp" />
+    <ClCompile Include="src\Cheat\Hooks\wglSwapBuffers.cpp" />
+    <ClCompile Include="src\Cheat\Hooks\WSA.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Combat\AimAssist.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Combat\LeftClicker.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Combat\Reach.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Combat\RightClicker.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Combat\Velocity.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Misc\Blink.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Misc\BridgeAssist.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Misc\ThrowPearl.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Misc\ThrowPots.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Module.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Movement\Bhop.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Movement\TimerSpeed.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Settings.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Visuals\ArrayList.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Visuals\BlockESP.cpp" />
+    <ClCompile Include="src\Cheat\Modules\Visuals\ESP.cpp" />
+    <ClCompile Include="src\EntryPoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Game\Classes\ActiveRenderInfo.cpp" />
+    <ClCompile Include="src\Game\Classes\AxisAlignedBB.cpp" />
+    <ClCompile Include="src\Game\Classes\Block.cpp" />
+    <ClCompile Include="src\Game\Classes\BlockPos.cpp" />
+    <ClCompile Include="src\Game\Classes\FontRenderer.cpp" />
+    <ClCompile Include="src\Game\Classes\GameSettings.cpp" />
+    <ClCompile Include="src\Game\Classes\Gui.cpp" />
+    <ClCompile Include="src\Game\Classes\GuiScreen.cpp" />
+    <ClCompile Include="src\Game\Classes\InventoryPlayer.cpp" />
+    <ClCompile Include="src\Game\Classes\ItemStack.cpp" />
+    <ClCompile Include="src\Game\Classes\KeyBinding.cpp" />
+    <ClCompile Include="src\Game\Classes\MovingObjectPosition.cpp" />
+    <ClCompile Include="src\Game\Classes\Player.cpp" />
+    <ClCompile Include="src\Game\Classes\Minecraft.cpp" />
+    <ClCompile Include="src\Game\Classes\RenderManager.cpp" />
+    <ClCompile Include="src\Game\Classes\Timer.cpp" />
+    <ClCompile Include="src\Game\Classes\World.cpp" />
+    <ClCompile Include="src\Game\Field.cpp" />
+    <ClCompile Include="src\Game\Klass.cpp" />
+    <ClCompile Include="src\Game\Mapper.cpp" />
+    <ClCompile Include="src\Game\Method.cpp" />
+    <ClCompile Include="src\Helper\Communication.cpp" />
+    <ClCompile Include="src\Helper\HookFunction.cpp" />
+    <ClCompile Include="src\Helper\Memory.cpp" />
+    <ClCompile Include="src\Helper\Utils.cpp" />
+    <ClCompile Include="vendors\imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\imgui\imgui_impl_opengl2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\imgui\imgui_tables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\minhook\buffer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\minhook\hde\hde32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\minhook\hde\hde64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\minhook\hook.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendors\minhook\trampoline.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
